@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multi.css">
+    <title>Educational website</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.countainer{
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    border: none;
+
+}
+p{
+    text-align: justify;
+    color: white;
+}
+.logo{
+    width: 100px;
+
+}
+ul li{
+    display: inline-block;
+    list-style: block;
+}
+ul li a{
+    color: white;
+    text-decoration: block;
+    margin: 0 10px;
+
+}
+p {
+  line-height: 2;
+  border: 5px solid black;
+}
+pre {
+  line-height: 2;
+  border: 5px solid black;
+  color: white;
+}
+#et2{
+    border: none;
+    border-radius: 0px;
+}
+h1 {
+  font-size: 36px;
+  color: rgb(218, 4, 4);
+}
+#title {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: 50px;
+}
+h2 {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+h2 {
+  font-size: 30px;
+  color: rgb(163, 22, 22);
+}
+
+h3 {
+  font-size: 24px;
+  color: rgb(143, 40, 40);
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0099ff;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgb(57, 54, 54);
+}
+
+tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+/* Multimedia */
+img {
+  width: 50%;
+  height: auto;
+  border: 0px solid #ddd;
+  border-radius: 4px;
+}
+audio, video {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+    </style>
+</head>
+<body>
+<div class="countainer">
+    <header>
+        <a href="index.html"><img src="header_js.png" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Educational</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+<h1 id="title">Introduction à HTML</h1>
+<p>HTML (HyperText Markup Language) est un langage utilisé pour créer et structurer du contenu sur le web. Il est constitué d'une série d'éléments, chacun ayant sa propre signification et sa propre utilité. Dans ce tutoriel, nous couvrirons les bases d'HTML, y compris comment créer et structurer une page web, ainsi que des concepts avancés tels que les formulaires, les tableaux et les médias.</p>
+<h2>Éléments HTML de base</h2>
+<p>Voici quelques exemples d'éléments HTML de base :</p>
+
+<h3>Entêtes</h3>
+<p>Les en-têtes sont utilisés pour organiser et structurer le contenu d'une page web. Il y a six niveaux d'en-têtes, allant de <code>&lt;h1&gt;</code> (le plus grand) à <code>&lt;h6&gt;</code> (le plus petit).</p>
+
+<pre>
+<h1 style="color: rgb(111, 46, 46);">Entête 1</h1>
+<h2 style="color: rgb(111, 46, 46);"id="et2">En-tête 2</h2>
+<h3 style="color: rgb(111, 46, 46);">Entête 3</h3>
+<h4 style="color: rgb(92, 46, 46);">Entête 4</h4>
+<h5 style="color: rgb(70, 17, 17);">Entête 5</h5>
+<h6 style="color: rgb(147, 91, 91);">En-tête 6</h6>
+</pre>
+
+<h3>Paragraphes</h3>
+<p>Les paragraphes sont utilisés pour contenir des blocs de texte. Ils sont définis à l'aide de l'élément <code>&lt;p&gt;</code>.</p>
+
+<pre>
+<p>Ceci est un paragraphe.</p>
+<p>Voici un autre paragraphe.</p>
+</pre>
+
+<h3>Liens</h3>
+<p>Les liens sont utilisés pour naviguer vers d'autres pages web ou pour télécharger des fichiers. Ils sont définis à l'aide de l'élément <code>&lt;a&gt;</code>.</p>
+
+<pre>
+<a href="https://www.exemple.com">Cliquez ici pour visiter Exemple.com</a>
+</pre>
+<h2>Éléments HTML avancés</h2>
+<p>Voici quelques exemples d'éléments HTML avancés :</p>
+
+<h3>Formulaires</h3>
+<p>Les formulaires sont utilisés pour collecter les entrées de l'utilisateur. Ils sont 
+<h3>Forms</h3>
+<p>Forms are used to collect user input. They are defined using the <code>&lt;form&gt;</code> element, and can contain various input fields like text boxes, radio buttons, and checkboxes.</p>
+
+<pre>
+<form action="/submit-form" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <input type="submit" value="Submit">
+</form> 
+</pre>
+
+<h3>Tables</h3>
+<p>Tables are used to display data in a grid format. They are defined using the <code>&lt;table&gt;</code> element, and can contain rows (<code>&lt;tr&gt;</code>), columns (<code>&lt;td&gt;</code>), and headers (<code>&lt;th&gt;</code>).</p>
+
+<pre>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>abcd cdcd</td>
+    <td>efjh@example.com</td>
+  </tr>
+  <tr>
+    <td>abcd cdcd</td>
+    <td>abcd@example.com</td>
+  </tr>
+</table>
+</pre>
+
+<h3>Multimedia</h3>
+<p>HTML supports various types of multimedia, including images, audio, and video. These elements are defined using the <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, and <code>&lt;video&gt;</code> elements, respectively.</p>
+
+<pre>
+
+<img src="larus.jpg" alt="A description of the image">
+
+<audio controls>
+  <source src="/path/to/audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<video controls>
+  <source src="/path/to/video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+</pre>
+</div>
+</body>
+</html>

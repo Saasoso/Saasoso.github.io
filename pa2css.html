@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multi.css">
+    <title>Educational website</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.countainer{
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+
+}
+p{
+    text-align: justify;
+}
+.logo{
+    width: 100px;
+
+}
+ul li{
+    display: inline-block;
+    list-style: block;
+}
+ul li a{
+    color: white;
+    text-decoration: block;
+    margin: 0 10px;
+
+}
+p {
+  line-height: 2;
+  border: 5px solid black;
+}
+pre {
+  line-height: 2;
+  border: 5px solid black;
+}
+.title {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: 50px;
+}
+h2 {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+  /* Sélecteurs */
+  h1 {
+        color: blue;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      #main-content p:first-child {
+        font-weight: bold;
+      }
+
+      /* Propriétés et valeurs */
+      h2 {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+      }
+
+      /* Modèle de boîte */
+      .box2 {
+        width: 200px;
+        height: 200px;
+        border: 10px solid blue;
+        padding: 20px;
+        margin: 30px;
+      }
+
+      /* Mise en page */
+      .float-left {
+        float: left;
+        width: 50%;
+      }
+      .float-right {
+        float: right;
+        width: 50%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Design responsive */
+      @media (max-width: 600px) {
+        .float-left,
+        .float-right {
+          width: 100%;
+          float: none;
+        }
+      }
+
+      /* Typographie */
+      .text-center {
+        text-align: center;
+      }
+      .text-uppercase {
+        text-transform: uppercase;
+      }
+      .text-italic {
+        font-style: italic;
+      }
+
+      /* Couleur */
+      .red-text {
+        color: red;
+      }
+      .green-bg {
+        background-color: green;
+      }
+
+      /* Arrière-plans */
+      .bg-image {
+        background-image: url("https://via.placeholder.com/150");
+        background-size: cover;
+      }
+
+      /* Transitions et animations */
+      .fade-in {
+        transition: all 2s ease-in;
+      }
+      .fade-in:hover {
+        opacity: 0.5;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .bounce {
+        animation: bounce 1s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+        <div class="countainer">
+            <header>
+                <a href="index.html"><img src="header_js.png" class="logo"></a>\
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Educational</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+    <h1>Bienvenue sur ma page web Concepts CSS!</h1>
+    <p class="highlight">
+      Cette page a pour but d'illustrer certains des concepts couverts dans un
+      cours CSS.
+    </p>
+    <h2>Sélecteurs</h2>
+    <p>
+      Les éléments <code>h1</code> de cette page ont une couleur bleue, car ils sont sélectionnés à l'aide du sélecteur <code>h1</code>.
+    </p>
+    <p class="highlight">
+      Ce paragraphe a un arrière-plan jaune, car il est sélectionné à l'aide du sélecteur de classe <code>.highlight</code>.
+    </p>
+    <p>
+      Ce paragraphe a un poids de police en gras, car il est sélectionné à l'aide du sélecteur <code>#main-content p:first-child</code>, qui sélectionne le premier élément <code>p</code> qui est un enfant de l'élément ayant l'ID <code>main-content</code>.
+    </p>
+  </div>
+  
+  <h2>Propriétés et valeurs</h2>
+  <p>
+    Les éléments <code>h2</code> de cette page ont les propriétés et valeurs suivantes :
+  </p>
+  <ul>
+    <li>
+      <code>font-size</code> : <code>24px</code>
+    </li>
+    <li>
+      <code>font-family</code> : <code>Arial, sans-serif</code>
+    </li>
+    <li>
+      <code>text-align</code> : <code>center</code>
+    </li>
+  </ul>
+  
+  <h2>Modèle de boîte</h2>
+  <div class="box">
+    Cet élément <code>div</code> a une bordure, un rembourrage et une marge.
+  </div>
+  <div class="box2">
+    Cet élément <code>div</code> a une bordure plus épaisse, un rembourrage supplémentaire et une marge supplémentaire.
+  </div>
+  
+  <h2>Mise en page</h2>
+  <div class="float-left">
+    <p>
+      Ce paragraphe est flottant à gauche et occupe 50 % de la largeur de l'élément parent.
+    </p>
+  </div>
+  <div class="float-right">
+    <p>
+      Ce paragraphe est flottant à droite et occupe 50 % de la largeur de l'élément parent.
+    </p>
+  </div>
+  <div class="clearfix"></div>
+  
+  <h2>Design responsive</h2>
+  <p>
+    Sur les petits écrans, les deux paragraphes ci-dessus devraient s'empiler les uns sur les autres au lieu de flotter côte à côte.
+  </p>
+  
+  <h2>Typographie</h2>
+  <pre>
+
+  </pre>
+  <p class="text-center">
+    Ce paragraphe est centré à l'aide de la propriété <code>text-align</code>.
+  </p>
+  <br>
+  <p class="text-uppercase">
+    Ce paragraphe a du texte en majuscules à l'aide de la propriété <code>text-transform</code>.
+  </p><br>
+  <p class="text-italic">
+    Ce paragraphe a du texte en italique à l'aide de la propriété <code>font-style</code>.
+  </p><br>
+
+  <h2>Couleur</h2>
+  <p class="red-text">
+    Ce paragraphe a du texte rouge à l'aide de la propriété <code>color</code>.
+  </p><br>
+  <div class="green-bg">
+    Cet élément <code>div</code> a un arrière-plan vert à l'aide de la propriété <code>background-color</code>.
+  </div><br>
+
+  <h2>Arrière-plans</h2>
+  <div class="bg-image">
+    Cet élément <code>div</code> a une image d'arrière-plan à l'aide de la propriété <code>background-image</code>.
+  </div><br>
+
+  <h2>Transitions et animations</h2>
+  <p class="fade-in">
+    Ce paragraphe a une transition de l'opacité à l'aide de la propriété <code>transition</code>.
+  </p><br>
+  <div class="bounce">
+    Cet élément <code>div</code> a une animation de rebond à l'aide de la propriété <code>animation</code>.
+  </div><br>
+       
+
+</body>
+</html>
