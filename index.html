@@ -17,7 +17,14 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-}
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+     width: 100%;
+    }
+    @media (max-width: 767px) {
+
+    
 header{
     display: flex;
     justify-content: space-between;
@@ -165,6 +172,7 @@ h2{
 .icons{
     position: absolute;
 }
+    }
     </style>
 </head>
 <body onload="entry()";>
@@ -173,9 +181,6 @@ h2{
         <a href="https://saasoso.github.io"><img src="header_js.png" class="logo"></a>\
         <ul>
             <li><a href="https://saasoso.github.io">Home</a></li>
-            <li><a href="#">Educational</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
@@ -207,9 +212,9 @@ h2{
             <img class="img" src="icons1.png">
         </div>
         <div class="icons">
-            <img class="i1" onclick="icones1(this.src)" src="icons1.png" >
-            <img class="i2" onclick="icones2(this.src)" src="icons2.png" >
-            <img class="i3" onclick="icones3(this.src)" src="icons3.png" >
+            <img class="i1" onclick="icones1(this.src)" src="icons1.png" alt="Icon 1" >
+            <img class="i2" onclick="icones2(this.src)" src="icons2.png" alt="Icon 2" >
+            <img class="i3" onclick="icones3(this.src)" src="icons3.png" alt="Icon 3" >
         </div>
     </div>
 </div>
