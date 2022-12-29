@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational website</title>
    <style>
-      *{
+       *{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+
 }
 .countainer{
     background-color: black;
@@ -166,16 +167,16 @@ h2{
 }
 @media (max-width: 480px) {
   body{
-    padding: 0;
-    margin: 0;
-    flex-direction: column; 
     display: inline-block;
-  overflow-y: scroll;
+    flex-direction: column; 
+    overflow-y: scroll;
   }
   div{
     position: relative;
   bottom: 20px;
   margin: 20px;
+  overflow-y: scroll;
+
   }
 .icons{
     display: flex; 
@@ -185,7 +186,8 @@ h2{
   position: absolute;
 }
 .content{
-  padding-bottom: 20px; /* Add 20px of padding to the bottom of the element */
+    padding-top: 20px;
+  padding-bottom: 20px; 
 }
   .content > div:nth-child(2n+1) {
   border: 2px solid black; /* Add a 2px solid black border to every odd-numbered element */
