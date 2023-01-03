@@ -177,23 +177,44 @@ h2{
     width: 100%;
     padding: 0 20px;
   }
+  .content{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
   h2{
+    width: 420px;
     border: 2px solid #333;
   border-radius: 5px;
-  padding: 10px;
+  width: 420px;
+  text-align: center;
+  margin-bottom:200px ;
   }
   p{
     line-height: 2;
-    border: 5px solid black;
+    border-bottom: 50px solid black;
     color: white;
+    width: 420px;
+    margin-top: 300px;
+    margin-bottom:700px ;
   }
-  .image{
-    position: absolute;
-  bottom: 0;
+  .content .image{
+position: absolute;
+  bottom: 68%;
   left: 50%;
+  right: 50%;
   transform: translateX(-50%);
   }
+.ep{
+    margin-bottom : 0px ;
+    border: 0;
 }
+}
+
    </style>
 </head>
 <body onload="entry()";>
@@ -249,7 +270,7 @@ h2{
     var y = document.querySelector('.text2');
     var z = document.querySelector('.text3');
     var r = document.querySelector('.text');
-
+        
     let img = document.querySelector('.img');
     let i1 = document.querySelector('.i1');
     let i2 = document.querySelector('.i2');
@@ -266,6 +287,7 @@ h2{
          r.style.display = "none";
          y.style.display = "none";
          z.style.display = "none";
+         img.style.marginTop = "100px";
      if(x.style.display ==="none"){
         x.style.display = "block";
      }
@@ -273,6 +295,7 @@ h2{
         function icones2(icon){
            
             img.src = icon;
+            
         r.style.display = "none";
         z.style.display = "none";
         x.style.display = "none";
