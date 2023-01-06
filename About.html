@@ -5,48 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational website</title>
-<style type="text/css">
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-
-}
-.countainer{
-    min-height: 90vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-}
-p{
-    text-align: justify;
-}
-.logo{
-    width: 100px;
-
-}
-ul li{
-    display: inline-block;
-    list-style: block;
-}
-ul li a{
-    color: white;
-    text-decoration: block;
-    margin: 0 10px;
-
-}
-p {
-  line-height: 2;
-  border: 5px solid black;
-}
+    <html>
+        <head>
+          <style type="text/css">
+            * {
+              padding: 0;
+              margin: 0;
+              font-family: sans-serif;
+              color: white;
+            }
+            .container {
+              min-height: 90vh;
+              width: 100%;
+              overflow: hidden;
+              position: relative;
+            }
+            header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 80%;
+              margin: auto;
+              padding: 20px 0;
+            }
+            p {
+              text-align: justify;
+            }
+            .logo {
+              width: 100px;
+            }
+            ul li {
+              display: inline-block;
+              list-style: block;
+            }
+            ul li a {
+              color: white;
+              text-decoration: none;
+              margin: 0 10px;
+            }
+            .img{
+              width: 200px;
+              border-radius: 50%;
+            }
+            h1 {
+              text-align: center;
+              font-size: 2em;
+              margin-bottom: 20px;
+            }
+            h2 {
+              font-size: 1.5em;
+              margin-bottom: 10px;
+            }
+            pre {
+              font-size: 1.2em;
+              margin-bottom: 20px;
+            }
+            ol {
+              font-size: 1.2em;
+            }
+            li {
+              margin-bottom: 10px;
+            }
 </style>
 </head>
 <body style="background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(45, 44, 44));">
@@ -58,6 +77,25 @@ p {
             <li><a href="https://saasoso.github.io/About.html">About</a></li>
         </ul>
     </header>
+    <div class="content">
+        <h1>About Me</h1>
+        <img src="" id="img">
+        <pre>Bonjour , je m'appele <span class="Im">Saad Charif</span>.
+             J'ai 19 ans . Je suis un etudiant de la faculte de science de Rabat , 
+             precisament de branche SMI - au deuxieme anne .
+            </pre>
+            <h2>Cette page :</h2>
+            <pre>
+            Cette page est un projet pour le module de thechnologie de Web.
+            Comme sujet elle donne une introduction de ce que j'ai recapituller dans ce module
+            dans ce semestre en le presantant dans ce site web
+<ol>
+    <li>HTml</li>
+    <li>Css</li>
+    <li>Javascript</li>
+</ol>
+</pre>
+    </div>
     </div>
 </body>
 </html>
