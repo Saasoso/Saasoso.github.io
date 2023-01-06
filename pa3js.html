@@ -13,7 +13,6 @@
 
 }
 .countainer{
-  background: linear-gradient(to bottom, black, rgb(14, 14, 14));
       min-height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -46,7 +45,6 @@ ul li a{
 
 }
 body {
-  background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -160,11 +158,12 @@ input .operation {
 <body style="background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(48, 48, 48));">
 <div class="countainer">
     <header>
-        <a href="https://saasoso.github.io"><img src="https://saasoso.github.io/header_js.png" class="logo"></a>
-        <ul>
-            <li><a href="https://saasoso.github.io">Home</a></li>
-            <li><a href="https://saasoso.github.io/About.html">About</a></li>
-                  </ul>
+      <a href="https://saasoso.github.io"><img src="https://saasoso.github.io/header_js.png" class="logo"></a>
+      <ul>
+          <li><a href="https://saasoso.github.io">Home</a></li>
+          <li><a href="https://saasoso.github.io/About.html">About</a></li>
+      </ul>
+  </header>
     </header>
     <div class="content">
         <h1 class="title">JavaScript</h1>
@@ -183,7 +182,8 @@ input .operation {
   var message = "Bonjour le monde!";
   </code>
   </pre>
-  <p>Vous pouvez également utiliser les mots-clés `let` et `const` pour déclarer des variables. `let` est similaire à `var`, mais a des règles de portée plus strictes. `const` est utilisé pour déclarer des variables qui ne peuvent pas être réaffectées, comme ceci:</p>
+  <p>Vous pouvez également utiliser les mots-clés `let` et `const` pour déclarer des variables. `let` est similaire à `var`, mais a des règles de portée plus strictes. 
+    `const` est utilisé pour déclarer des variables qui ne peuvent pas être réaffectées, comme ceci:</p>
   <pre>
   <code>
   const pi = 3.14;
@@ -197,16 +197,16 @@ input .operation {
     <li>nombres (par ex. `42`)</li>
     <li>booléens (par ex. `true` ou `false`)</li>
     <li>tableaux (par ex. `[1, 2, 3]`)</li>
-    <li>objets (par ex. `{nom: "Jean", age: 30}`)</li>
+    <li>objets (par ex. `{nom: "Saad", age: 30}`)</li>
   </ul>
   <p>Vous pouvez utiliser l'opérateur `typeof` pour obtenir le type de données d'une valeur, comme ceci:</p>
   <pre>
   <code>
-  console.log(typeof "bonjour"); // "string"
-  console.log(typeof 42); // "number"
-  console.log(typeof true); // "boolean"
-  console.log(typeof [1, 2, 3]); // "object"
-  console.log(typeof {nom: "Jean", age: 30}); // "object"
+  document.write(typeof "bonjour"); --> "string"
+  document.write(typeof 42); -->"number"
+  document.write(typeof true); --> "boolean"
+  document.write(typeof [1, 2, 3]); --> "object"
+  document.write(typeof {nom: "Saad", age: 30}); --> "object"
   </code>
 </pre>
 <h2>Opérateurs</h2>
@@ -219,17 +219,17 @@ input .operation {
   <p>Par exemple, vous pouvez utiliser l'opérateur `+` pour additionner deux nombres:</p>
   <pre>
   <code>
-  console.log(1 + 1); // 2
+  document.write(1 + 1); --> Affiche : 2
   </code>
   </pre>
   <p>Vous pouvez également utiliser des opérateurs de comparaison pour comparer des valeurs. Par exemple:</p>
   <pre>
   <code>
-  console.log(1 == 1); // true
-  console.log(1 == 2); // false
-  console.log(1 != 2); // true
-  console.log(1 > 2); // false
-  console.log(1 < 2); // true
+  document.write(1 == 1); --> Affiche : true
+  document.write(1 == 2); --> Affiche : false
+  document.write(1 != 2); --> Affiche : true
+  document.write(1 > 2); --> Affiche : false
+  document.write(1 < 2); --> Affiche : true
   </code>
   </pre>
   <h2>Structures de contrôle</h2>
@@ -244,7 +244,7 @@ input .operation {
   <code>
   var x = 10;
   if (x > 5) {
-    console.log("x est supérieur à 5");
+    document.write("x est supérieur à 5");
   }
   </code>
   </pre>
@@ -253,7 +253,7 @@ input .operation {
   <code>
   var numbers = [1, 2, 3, 4, 5];
   for (var i = 0; i < numbers.length; i++) {
-    console.log(numbers[i]);
+    document.write(numbers[i]);
   }
   </code>
   </pre>
@@ -263,7 +263,7 @@ input .operation {
     <p>Vous pouvez appeler la fonction de cette manière:</p>
     <pre>
     <code>
-    saluer("Jean"); // Affiche "Bonjour Jean!"
+    saluer("Jean"); --> Affiche : Affiche "Bonjour Saad!"
     </code>
     </pre>
     
@@ -271,13 +271,13 @@ input .operation {
     <p>JavaScript vous permet de rattacher du code à des événements déclenchés par l'utilisateur ou le navigateur. Par exemple, vous pouvez utiliser l'événement `onclick` pour exécuter une fonction lorsqu'un bouton est cliqué:</p>
     <pre>
     <code>
-    &lt;button onclick="saluer('Jean')"&gt;Cliquez ici!&lt;/button&gt;
+    &lt;button onclick="saluer('Saad')"&gt;Cliquez ici!&lt;/button&gt;
     </code>
     </pre>
     <pre>
         <code>
         document.getElementById("mon-bouton").addEventListener("click", function() {
-          console.log("Le bouton a été cliqué!");
+          document.write("Le bouton a été cliqué!");
         });
         </code>
         </pre>
@@ -306,7 +306,7 @@ input .operation {
   <pre>
   <code>
   var personne = {
-    nom: "Jean",
+    nom: "Saad",
     âge: 30
   };
   </code>
@@ -315,13 +315,13 @@ input .operation {
   <pre>
   <code>
   var personne = {
-    nom: "Jean",
+    nom: "Saad",
     âge: 30,
     sePresenter: function() {
-      console.log("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans.");
+      document.write("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans.");
     }
   };
-  personne.sePresenter(); // Affiche "Bonjour, je m'appelle Jean et j'ai 30 ans."
+  personne.sePresenter(); --> Affiche : Affiche "Bonjour, je m'appelle Jean et j'ai 30 ans."
   </code>
   </pre>
   
@@ -335,22 +335,22 @@ input .operation {
   <p>Par exemple, vous pouvez définir un tableau de noms:</p>
   <pre>
   <code>
-  var noms = ["Jean", "Marie", "Luc"];
+  var noms = ["S", "C", "c"];
   </code>
   </pre>
   <p>Vous pouvez accéder à un élément d'un tableau en utilisant son indice (l'emplacement de l'élément dans le tableau), commençant à 0:</p>
   <pre>
   <code>
-  console.log(noms[0]); // Affiche "Jean"
-  console.log(noms[1]); // Affiche "Marie"
-  console.log(noms[2]); // Affiche "Luc"
+  document.write(noms[0]); --> Affiche S
+  document.write(noms[1]); --> Affiche C
+  document.write(noms[2]); --> Affiche c
   </code>
   </pre>
   <p>Vous pouvez également utiliser la méthode `push` pour ajouter un élément à la fin d'un tableau:</p>
   <pre>
   <code>
   noms.push("Paul");
-  console.log(noms); // Affiche ["Jean", "Marie", "Luc", "Paul"]
+  document.write(noms); --> Affiche ["S", "a", "a", "d"]
   </code>
   </pre>
   class Personne {
@@ -359,7 +359,7 @@ input .operation {
       this.âge = âge;
     }
     sePresenter() {
-      console.log("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans.");
+      document.write("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans.");
     }
   }
   </code>
@@ -367,8 +367,8 @@ input .operation {
   <p>Vous pouvez créer une instance de la classe "Personne" en utilisant la syntaxe `new`:</p>
   <pre>
   <code>
-  var personne1 = new Personne("Jean", 30);
-  personne1.sePresenter(); // Affiche "Bonjour, je m'appelle Jean et j'ai 30 ans."
+  var personne1 = new Personne("Saad", 30);
+  personne1.sePresenter(); --> Affiche : Affiche "Bonjour, je m'appelle Jean et j'ai 30 ans."
   </code>
   </pre>
   <p>Vous pouvez également définir une classe en étendant (héritant de) une autre classe:</p>
@@ -376,11 +376,11 @@ input .operation {
   <code>
   class Etudiant extends Personne {
     constructor(nom, âge, matricule) {
-      super(nom, âge); // Appel du constructeur de la classe parente
+      super(nom, âge); --> Affiche : Appel du constructeur de la classe parente
       this.matricule = matricule;
     }
     sePresenter() {
-      console.log("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans. Mon matricule est " + this.matricule + ".");
+      document.write("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.âge + " ans. Mon matricule est " + this.matricule + ".");
     }
   }
   </code>
@@ -388,8 +388,8 @@ input .operation {
   <p>Vous pouvez créer une instance de la classe "Etudiant" de la même manière que pour la classe "Personne":</p>
   <pre>
   <code>
-  var etudiant1 = new Etudiant("Marie", 20, "abc123");
-  etudiant1.sePresenter(); // Affiche "Bonjour, je m'appelle Marie et j'ai 20 ans. Mon matricule est abc123."
+  var etudiant1 = new Etudiant("Saad", 20, "abc123");
+  etudiant1.sePresenter(); --> Affiche : Affiche "Bonjour, je m'appelle Saad et j'ai 20 ans. Mon matricule est abc123."
   </code>
   </pre>
   
