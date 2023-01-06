@@ -145,28 +145,25 @@ input .operation {
   border: 3px solid black;
 }
 #calculatrice {
-  width: 50%; /* Définissez une largeur pour la div */
+  width: 50%; 
     margin: auto;
     text-align: center;
 }
 #horloge {
-  width: 50%; /* Définissez une largeur pour la div */
+  width: 50%; 
     margin: auto;
     text-align: center;
 }
 
     </style>
 </head>
-<body>
+<body style="background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 251, 251));">
 <div class="countainer">
     <header>
         <a href="https://saasoso.github.io"><img src="https://saasoso.github.io/header_js.png" class="logo"></a>
         <ul>
             <li><a href="https://saasoso.github.io">Home</a></li>
-            <li><a href="#">Educational</a></li>
-            <li><a href="#">Course</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
         </ul>
     </header>
     <div class="content">
@@ -458,7 +455,7 @@ setInterval(() => {
     const minutes = date.getMinutes();
     const secondes = date.getSeconds();
 
-    // Affichez l'heure dans le paragraphe :
+    
     document.getElementById('heure').textContent = ` ${heure}:${minutes}:${secondes}`;
   }, 1000);
     </script>

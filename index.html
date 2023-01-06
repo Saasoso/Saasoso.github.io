@@ -12,9 +12,8 @@
 
 }
 .countainer{
-    background: linear-gradient(to bottom, black, rgb(14, 14, 14));
     background-color: black;
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -171,11 +170,13 @@ h2{
 .icons{
     position: absolute;
     text-align: center;
+    margin-bottom: 5vh;
 }
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
     padding: 0 20px;
+    height: 180vh;
   }
   .content{
     justify-content: space-between;
@@ -183,8 +184,8 @@ h2{
     width: 380px;
     width: 380px;    
     margin-top: 0px;
-    margin-left: 30px;
-    margin-right: 5px;
+    margin-left: 5vh;
+    margin-right: 5vh;
     margin-bottom: 0px;
   }
   h2{
@@ -213,19 +214,28 @@ position: absolute;
     margin-bottom : 0px ;
     border: 0;
 }
+.ever{
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+}
+.image{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 }
 
    </style>
 </head>
-<body onload="entry()";>
+<body style="background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 251, 251));" onload="entry()"; >
 <div class="countainer">
     <header>
-        <a href="https://saasoso.github.io"><img src="header_js.png" class="logo"></a>\
+        <a href="https://saasoso.github.io"><img src="header_js.png" class="logo"></a>
         <ul>
             <li><a href="https://saasoso.github.io">Home</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </header>
+    <div class="ever">
     <div class="content">
         <div class="text">
             <h2>Technologie de web</h2>
@@ -257,6 +267,7 @@ position: absolute;
         <div class="image">
             <img class="img" src="icons1.png">
         </div>
+    </div>
         <div class="icons">
             <p class="ep"><br>Sélectionner un des icones ci-dessous pour plus des détails :</p>
             <img class="i1" onclick="icones1(this.src)" src="icons1.png" alt="Icon 1" >
@@ -265,6 +276,7 @@ position: absolute;
         </div>
     </div>
 </div>
+
     <script>
     var x = document.querySelector('.text1');
     var y = document.querySelector('.text2');
